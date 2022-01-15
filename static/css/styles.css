@@ -1,9 +1,10 @@
-#body-container {
-  background-image: url("../img/reminderapp_background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover 100%;
-  background-attachment: fixed;
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 
 .quote-card-container {

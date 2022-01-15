@@ -1,0 +1,32 @@
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.filter-group {
+  margin: 20px;
+}
+
+.app-logo {
+  width: fit-content;
+  border-radius: 5px;
+  margin: auto;
+}
+
+/* .tab-content {
+    width: 90%;
+    text-align: center;
+} */
+
+.reminder-card {
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.card_reminder {
+    margin: 20px;
+}
