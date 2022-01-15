@@ -1,0 +1,17 @@
+#body-container {
+  background-image: url("../img/reminderapp_background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover 100%;
+  background-attachment: fixed;
+}
+
+.quote-card-container {
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.quote-card {
+  padding: 10px;
+  margin: auto;
+}
