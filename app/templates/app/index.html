@@ -44,7 +44,9 @@
         <div class="col-3 nav-col">
           <!-- create reminder button -->
           <div class="filter-group text-center">
-            <a href="{% url 'upload' %}" class="btn btn-success"> Create reminder </a>
+            <a href="{% url 'upload' %}" class="btn btn-success">
+              Create reminder
+            </a>
           </div>
           <!-- filter list -->
           <div class="list-group filter-group" id="list-tab" role="tablist">
@@ -59,7 +61,7 @@
               role="tab"
               aria-controls="list-all"
               >All
-              <span class="badge bg-dark float-end">{{ all_count }}</span></a
+              <span class="badge bg-danger float-end">{{ all_count }}</span></a
             >
             <!-- else -->
             {% else %}
@@ -88,7 +90,7 @@
               role="tab"
               aria-controls="list-priority"
               >Priority
-              <span class="badge bg-dark float-end"
+              <span class="badge bg-danger float-end"
                 >{{ priority_count }}</span
               ></a
             >
@@ -119,7 +121,7 @@
               role="tab"
               aria-controls="list-work"
               >Work
-              <span class="badge bg-dark float-end">{{ work_count }}</span></a
+              <span class="badge bg-danger float-end">{{ work_count }}</span></a
             >
             <!-- else -->
             {% else %}
@@ -148,7 +150,7 @@
               role="tab"
               aria-controls="list-home"
               >Home
-              <span class="badge bg-dark float-end">{{ home_count }}</span></a
+              <span class="badge bg-danger float-end">{{ home_count }}</span></a
             >
             <!-- else -->
             {% else %}
@@ -177,7 +179,7 @@
               role="tab"
               aria-controls="list-family"
               >Family
-              <span class="badge bg-dark float-end">{{ family_count }}</span></a
+              <span class="badge bg-danger float-end">{{ family_count }}</span></a
             >
             <!-- else -->
             {% else %}
@@ -206,7 +208,7 @@
               role="tab"
               aria-controls="list-leisure"
               >Leisure
-              <span class="badge bg-dark float-end"
+              <span class="badge bg-danger float-end"
                 >{{ leisure_count }}</span
               ></a
             >
@@ -240,7 +242,7 @@
               role="tab"
               aria-controls="list-complete"
               >Complete
-              <span class="badge bg-dark float-end"
+              <span class="badge bg-danger float-end"
                 >{{ complete_count }}</span
               ></a
             >
@@ -273,7 +275,7 @@
                 <a class="nav-link text-black" href="#">Contacts</a>
               </li>
               <li class="nav-item list-group-item bg-transparent">
-                <a class="nav-link text-black btn btn-danger" href="#"
+                <a class="nav-link text-black btn btn-primary" href="#"
                   >Logout</a
                 >
               </li>
@@ -304,7 +306,9 @@
                   {% if current_user %}
                   <!-- if -->
                   <li class="breadcrumb-item">
-                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                    <span
+                      class="user-alert alert-success fw-light fst-italic"
+                      role="alert"
                       >logged in as: {{current_user}}</span
                     >
                   </li>
@@ -394,7 +398,9 @@
                   {% if current_user %}
                   <!-- if -->
                   <li class="breadcrumb-item">
-                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                    <span
+                      class="user-alert alert-success fw-light fst-italic"
+                      role="alert"
                       >logged in as: {{current_user}}</span
                     >
                   </li>
@@ -484,7 +490,9 @@
                   {% if current_user %}
                   <!-- if -->
                   <li class="breadcrumb-item">
-                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                    <span
+                      class="user-alert alert-success fw-light fst-italic"
+                      role="alert"
                       >logged in as: {{current_user}}</span
                     >
                   </li>
@@ -574,7 +582,9 @@
                   {% if current_user %}
                   <!-- if -->
                   <li class="breadcrumb-item">
-                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                    <span
+                      class="user-alert alert-success fw-light fst-italic"
+                      role="alert"
                       >logged in as: {{current_user}}</span
                     >
                   </li>
@@ -664,7 +674,9 @@
                   {% if current_user %}
                   <!-- if -->
                   <li class="breadcrumb-item">
-                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                    <span
+                      class="user-alert alert-success fw-light fst-italic"
+                      role="alert"
                       >logged in as: {{current_user}}</span
                     >
                   </li>
@@ -754,7 +766,9 @@
                   {% if current_user %}
                   <!-- if -->
                   <li class="breadcrumb-item">
-                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                    <span
+                      class="user-alert alert-success fw-light fst-italic"
+                      role="alert"
                       >logged in as: {{current_user}}</span
                     >
                   </li>
@@ -844,7 +858,9 @@
                   {% if current_user %}
                   <!-- if -->
                   <li class="breadcrumb-item">
-                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                    <span
+                      class="user-alert alert-success fw-light fst-italic"
+                      role="alert"
                       >logged in as: {{current_user}}</span
                     >
                   </li>

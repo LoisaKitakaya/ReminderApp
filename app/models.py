@@ -1,6 +1,7 @@
 from pickle import TRUE
 from django.db import models
 from django.contrib.auth.models import User
+from slugger import AutoSlugField
 
 # Create your models here.
 STATUS = (
@@ -18,7 +19,7 @@ TAGS = (
 
 class ReminderModel(models.Model):
     title = models.CharField(max_length=50, unique=True)
-    slug = models.SlugField(max_length=50, unique=True)
+    slug = AutoSlugField(populate_from='title')
     reminder = models.TextField()
     set_for = models.DateTimeField(auto_now_add=False)
     tag = models.CharField(max_length=50, choices=TAGS)

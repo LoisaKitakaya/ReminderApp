@@ -9,3 +9,4 @@ class ReminderForm(forms.ModelForm):
 
         model = ReminderModel
         fields = '__all__'
+        exclude = ('slug',)
