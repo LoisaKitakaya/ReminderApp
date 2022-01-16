@@ -24,6 +24,7 @@ def home(request):
 
     return render(request, 'home.html', context)
 
+@login_required(login_url='login')
 def app(request):
 
     current_user = request.user
@@ -76,6 +77,7 @@ def app(request):
 
     return render(request, 'app/index.html', context)
 
+@login_required(login_url='login')
 def upload(request):
 
     current_user = request.user

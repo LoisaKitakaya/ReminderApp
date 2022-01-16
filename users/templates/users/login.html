@@ -14,9 +14,9 @@
       type="image/x-icon"
     />
     <!-- document title -->
-    <title>ReminderApp | Create reminder</title>
+    <title>ReminderApp | Login</title>
     <!-- css file -->
-    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'users/css/styles.css' %}" />
     <!-- bootstrap css -->
     <link
       rel="stylesheet"
@@ -49,9 +49,7 @@
           <li class="breadcrumb-item">
             <a href="{% url 'app' %}">App</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Create reminder
-          </li>
+          <li class="breadcrumb-item active" aria-current="page">Login</li>
           <!-- if -->
           {% if current_user %}
           <!-- if -->
@@ -70,7 +68,7 @@
 
       <!-- all filter content -->
       <div class="all-filter-content">
-        <h3 class="text-center">Create Reminder</h3>
+        <h3 class="text-center">Login</h3>
         <div class="form-card">
           <form method="POST">
             {% csrf_token %}
@@ -78,8 +76,14 @@
             {% bootstrap_form form %}
             <br />
             <button type="submit" class="btn btn-success container-fluid">
-              Create
+              Login
             </button>
+            <br />
+            <br>
+            <p class="text-center">
+              Don't have an account? Signup
+              <a href="{% url 'signup' %}">here</a>
+            </p>
           </form>
         </div>
       </div>

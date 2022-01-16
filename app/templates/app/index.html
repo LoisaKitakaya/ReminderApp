@@ -179,7 +179,9 @@
               role="tab"
               aria-controls="list-family"
               >Family
-              <span class="badge bg-danger float-end">{{ family_count }}</span></a
+              <span class="badge bg-danger float-end"
+                >{{ family_count }}</span
+              ></a
             >
             <!-- else -->
             {% else %}
@@ -275,7 +277,9 @@
                 <a class="nav-link text-black" href="#">Contacts</a>
               </li>
               <li class="nav-item list-group-item bg-transparent">
-                <a class="nav-link text-black btn btn-primary" href="#"
+                <a
+                  class="nav-link text-black btn btn-warning"
+                  href="{% url 'logout' %}"
                   >Logout</a
                 >
               </li>
@@ -909,8 +913,7 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ element.title }}</h5>
                           <p class="card-text">{{ element.reminder }}</p>
-                          <a href="#" class="btn btn-warning">Mark as done</a>
-                          <a href="#" class="btn btn-danger float-end"
+                          <a href="#" class="btn btn-danger"
                             >Delete</a
                           >
                         </div>
