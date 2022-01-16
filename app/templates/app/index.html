@@ -48,6 +48,9 @@
           </div>
           <!-- filter list -->
           <div class="list-group filter-group" id="list-tab" role="tablist">
+            <!-- if -->
+            {% if all_count %}
+            <!-- if -->
             <a
               class="list-group-item list-group-item-action active"
               id="list-all-list"
@@ -55,8 +58,28 @@
               href="#list-all"
               role="tab"
               aria-controls="list-all"
-              >All <span class="badge bg-dark float-end">4</span></a
+              >All
+              <span class="badge bg-dark float-end">{{ all_count }}</span></a
             >
+            <!-- else -->
+            {% else %}
+            <!-- else -->
+            <a
+              class="list-group-item list-group-item-action active"
+              id="list-all-list"
+              data-bs-toggle="list"
+              href="#list-all"
+              role="tab"
+              aria-controls="list-all"
+              >All <span class="badge bg-dark float-end">0</span></a
+            >
+            <!-- endif -->
+            {% endif %}
+            <!-- endif -->
+
+            <!-- if -->
+            {% if priority_count %}
+            <!-- if -->
             <a
               class="list-group-item list-group-item-action"
               id="list-priority-list"
@@ -64,8 +87,30 @@
               href="#list-priority"
               role="tab"
               aria-controls="list-priority"
-              >Priority <span class="badge bg-dark float-end">4</span></a
+              >Priority
+              <span class="badge bg-dark float-end"
+                >{{ priority_count }}</span
+              ></a
             >
+            <!-- else -->
+            {% else %}
+            <!-- else -->
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-priority-list"
+              data-bs-toggle="list"
+              href="#list-priority"
+              role="tab"
+              aria-controls="list-priority"
+              >Priority <span class="badge bg-dark float-end">0</span></a
+            >
+            <!-- endif -->
+            {% endif %}
+            <!-- endif -->
+
+            <!-- if -->
+            {% if work_count %}
+            <!-- if -->
             <a
               class="list-group-item list-group-item-action"
               id="list-work-list"
@@ -73,8 +118,28 @@
               href="#list-work"
               role="tab"
               aria-controls="list-work"
-              >Work <span class="badge bg-dark float-end">4</span></a
+              >Work
+              <span class="badge bg-dark float-end">{{ work_count }}</span></a
             >
+            <!-- else -->
+            {% else %}
+            <!-- else -->
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-work-list"
+              data-bs-toggle="list"
+              href="#list-work"
+              role="tab"
+              aria-controls="list-work"
+              >Work <span class="badge bg-dark float-end">0</span></a
+            >
+            <!-- endif -->
+            {% endif %}
+            <!-- endif -->
+
+            <!-- if -->
+            {% if home_count %}
+            <!-- if -->
             <a
               class="list-group-item list-group-item-action"
               id="list-home-list"
@@ -82,8 +147,28 @@
               href="#list-home"
               role="tab"
               aria-controls="list-home"
-              >Home <span class="badge bg-dark float-end">4</span></a
+              >Home
+              <span class="badge bg-dark float-end">{{ home_count }}</span></a
             >
+            <!-- else -->
+            {% else %}
+            <!-- else -->
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-home-list"
+              data-bs-toggle="list"
+              href="#list-home"
+              role="tab"
+              aria-controls="list-home"
+              >Home <span class="badge bg-dark float-end">0</span></a
+            >
+            <!-- endif -->
+            {% endif %}
+            <!-- endif -->
+
+            <!-- if -->
+            {% if family_count %}
+            <!-- if -->
             <a
               class="list-group-item list-group-item-action"
               id="list-family-list"
@@ -91,8 +176,28 @@
               href="#list-family"
               role="tab"
               aria-controls="list-family"
-              >Family <span class="badge bg-dark float-end">4</span></a
+              >Family
+              <span class="badge bg-dark float-end">{{ family_count }}</span></a
             >
+            <!-- else -->
+            {% else %}
+            <!-- else -->
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-family-list"
+              data-bs-toggle="list"
+              href="#list-family"
+              role="tab"
+              aria-controls="list-family"
+              >Family <span class="badge bg-dark float-end">0</span></a
+            >
+            <!-- endif -->
+            {% endif %}
+            <!-- endif -->
+
+            <!-- if -->
+            {% if leisure_count%}
+            <!-- if -->
             <a
               class="list-group-item list-group-item-action"
               id="list-leisure-list"
@@ -100,17 +205,66 @@
               href="#list-leisure"
               role="tab"
               aria-controls="list-leisure"
-              >Leisure <span class="badge bg-dark float-end">4</span></a
+              >Leisure
+              <span class="badge bg-dark float-end"
+                >{{ leisure_count }}</span
+              ></a
             >
+            <!-- else -->
+            {% else %}
+            <!-- else -->
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-leisure-list"
+              data-bs-toggle="list"
+              href="#list-leisure"
+              role="tab"
+              aria-controls="list-leisure"
+              >Leisure
+              <span class="badge bg-dark float-end"
+                >{{ leisure_count }}</span
+              ></a
+            >
+            <!-- endif -->
+            {% endif %}
+            <!-- endif -->
+
+            <!-- if -->
+            {% if complete_count%}
+            <!-- if -->
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-complete-list"
+              data-bs-toggle="list"
+              href="#list-complete"
+              role="tab"
+              aria-controls="list-complete"
+              >Complete
+              <span class="badge bg-dark float-end"
+                >{{ complete_count }}</span
+              ></a
+            >
+            <!-- else -->
+            {% else %}
+            <!-- else -->
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-complete-list"
+              data-bs-toggle="list"
+              href="#list-complete"
+              role="tab"
+              aria-controls="list-complete"
+              >Complete <span class="badge bg-dark float-end">0</span></a
+            >
+            <!-- endif -->
+            {% endif %}
+            <!-- endif -->
           </div>
           <!-- page navigation links -->
           <div class="filter-group">
             <ul class="nav flex-column list-group list-group-flush">
               <li class="nav-item list-group-item bg-transparent">
                 <a class="nav-link text-black" href="{% url 'home' %}">Home</a>
-              </li>
-              <li class="nav-item list-group-item bg-transparent">
-                <a class="nav-link text-black" href="#">App</a>
               </li>
               <li class="nav-item list-group-item bg-transparent">
                 <a class="nav-link text-black" href="#">About</a>
@@ -146,12 +300,29 @@
                   <li class="breadcrumb-item active" aria-current="page">
                     App
                   </li>
+                  <!-- if -->
+                  {% if current_user %}
+                  <!-- if -->
+                  <li class="breadcrumb-item">
+                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                      >logged in as: {{current_user}}</span
+                    >
+                  </li>
+                  <!-- endif -->
+                  {% endif %}
+                  <!-- endif -->
                 </ol>
               </nav>
 
               <!-- all filter content -->
               <div class="all-filter-content">
                 <h3>All Reminders</h3>
+                <!-- if -->
+                {% if all%}
+                <!-- if -->
+                <!-- for -->
+                {% for element in all %}
+                <!-- for -->
                 <div
                   class="accordion accordion-flush reminder-card"
                   id="reminderFlushAccordion"
@@ -162,38 +333,45 @@
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
+                        data-bs-target="#{{ element.slug }}"
                         aria-expanded="false"
-                        aria-controls="flush-collapseOne"
+                        aria-controls="{{ element.slug }}"
                       >
-                        Accordion Item #1
+                        {{ element.title }}
                       </button>
                     </h2>
                     <div
-                      id="flush-collapseOne"
+                      id="{{ element.slug }}"
                       class="accordion-collapse collapse"
                       aria-labelledby="flush-headingOne"
                       data-bs-parent="#reminderFlushAccordion"
                     >
                       <div class="card card_reminder">
-                        <div class="card-header">Featured</div>
+                        <div class="card-header fw-light fst-italic">
+                          #{{ element.tag }}
+                        </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
+                          <h5 class="card-title">{{ element.title }}</h5>
+                          <p class="card-text">{{ element.reminder }}</p>
                           <a href="#" class="btn btn-warning">Mark as done</a>
                           <a href="#" class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
-                        <div class="card-footer text-muted">2 days ago</div>
+                        <div class="card-footer text-muted">
+                          Set for: {{ element.set_for }}
+                        </div>
                       </div>
                       <br />
                     </div>
                   </div>
                 </div>
+                <!-- endfor -->
+                {% endfor %}
+                <!-- endfor -->
+                <!-- endif -->
+                {% endif %}
+                <!-- endif -->
               </div>
             </div>
             <!-- priority filter content -->
@@ -212,12 +390,29 @@
                   <li class="breadcrumb-item active" aria-current="page">
                     App
                   </li>
+                  <!-- if -->
+                  {% if current_user %}
+                  <!-- if -->
+                  <li class="breadcrumb-item">
+                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                      >logged in as: {{current_user}}</span
+                    >
+                  </li>
+                  <!-- endif -->
+                  {% endif %}
+                  <!-- endif -->
                 </ol>
               </nav>
 
               <!-- priority filter content -->
               <div class="priority-filter-content">
-                <h3>Priority Reminders</h3>
+                <h3><span class="fst-italic">#Priority</span> Reminders</h3>
+                <!-- if -->
+                {% if priority %}
+                <!-- if -->
+                <!-- for -->
+                {% for element in priority %}
+                <!-- for -->
                 <div
                   class="accordion accordion-flush reminder-card"
                   id="reminderFlushAccordion"
@@ -228,38 +423,45 @@
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
+                        data-bs-target="#{{ element.slug }}"
                         aria-expanded="false"
-                        aria-controls="flush-collapseOne"
+                        aria-controls="{{ element.slug }}"
                       >
-                        Accordion Item #1
+                        {{ element.title }}
                       </button>
                     </h2>
                     <div
-                      id="flush-collapseOne"
+                      id="{{ element.slug }}"
                       class="accordion-collapse collapse"
                       aria-labelledby="flush-headingOne"
                       data-bs-parent="#reminderFlushAccordion"
                     >
                       <div class="card card_reminder">
-                        <div class="card-header">Featured</div>
+                        <div class="card-header fw-light fst-italic">
+                          #{{ element.tag }}
+                        </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
+                          <h5 class="card-title">{{ element.title }}</h5>
+                          <p class="card-text">{{ element.reminder }}</p>
                           <a href="#" class="btn btn-warning">Mark as done</a>
                           <a href="#" class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
-                        <div class="card-footer text-muted">2 days ago</div>
+                        <div class="card-footer text-muted">
+                          Set for: {{ element.set_for }}
+                        </div>
                       </div>
                       <br />
                     </div>
                   </div>
                 </div>
+                <!-- endfor -->
+                {% endfor %}
+                <!-- endfor -->
+                <!-- endif -->
+                {% endif %}
+                <!-- endif -->
               </div>
             </div>
             <!-- work filter content -->
@@ -278,12 +480,29 @@
                   <li class="breadcrumb-item active" aria-current="page">
                     App
                   </li>
+                  <!-- if -->
+                  {% if current_user %}
+                  <!-- if -->
+                  <li class="breadcrumb-item">
+                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                      >logged in as: {{current_user}}</span
+                    >
+                  </li>
+                  <!-- endif -->
+                  {% endif %}
+                  <!-- endif -->
                 </ol>
               </nav>
 
               <!-- work filter content -->
               <div class="priority-filter-content">
-                <h3>Work Reminders</h3>
+                <h3><span class="fst-italic">#Work</span> Reminders</h3>
+                <!-- if -->
+                {% if work %}
+                <!-- if -->
+                <!-- for -->
+                {% for element in work %}
+                <!-- for -->
                 <div
                   class="accordion accordion-flush reminder-card"
                   id="reminderFlushAccordion"
@@ -294,38 +513,45 @@
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
+                        data-bs-target="#{{ element.slug }}"
                         aria-expanded="false"
-                        aria-controls="flush-collapseOne"
+                        aria-controls="{{ element.slug }}"
                       >
-                        Accordion Item #1
+                        {{ element.title }}
                       </button>
                     </h2>
                     <div
-                      id="flush-collapseOne"
+                      id="{{ element.slug }}"
                       class="accordion-collapse collapse"
                       aria-labelledby="flush-headingOne"
                       data-bs-parent="#reminderFlushAccordion"
                     >
                       <div class="card card_reminder">
-                        <div class="card-header">Featured</div>
+                        <div class="card-header fw-light fst-italic">
+                          #{{ element.tag }}
+                        </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
+                          <h5 class="card-title">{{ element.title }}</h5>
+                          <p class="card-text">{{ element.reminder }}</p>
                           <a href="#" class="btn btn-warning">Mark as done</a>
                           <a href="#" class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
-                        <div class="card-footer text-muted">2 days ago</div>
+                        <div class="card-footer text-muted">
+                          Set for: {{ element.set_for }}
+                        </div>
                       </div>
                       <br />
                     </div>
                   </div>
                 </div>
+                <!-- endfor -->
+                {% endfor %}
+                <!-- endfor -->
+                <!-- endif -->
+                {% endif %}
+                <!-- endif -->
               </div>
             </div>
             <!-- home filter content -->
@@ -344,12 +570,29 @@
                   <li class="breadcrumb-item active" aria-current="page">
                     App
                   </li>
+                  <!-- if -->
+                  {% if current_user %}
+                  <!-- if -->
+                  <li class="breadcrumb-item">
+                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                      >logged in as: {{current_user}}</span
+                    >
+                  </li>
+                  <!-- endif -->
+                  {% endif %}
+                  <!-- endif -->
                 </ol>
               </nav>
 
               <!-- home filter content -->
               <div class="priority-filter-content">
-                <h3>Home Reminders</h3>
+                <h3><span class="fst-italic">#Home</span> Reminders</h3>
+                <!-- if -->
+                {% if home %}
+                <!-- if -->
+                <!-- for -->
+                {% for element in home %}
+                <!-- for -->
                 <div
                   class="accordion accordion-flush reminder-card"
                   id="reminderFlushAccordion"
@@ -360,38 +603,45 @@
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
+                        data-bs-target="#{{ element.slug }}"
                         aria-expanded="false"
-                        aria-controls="flush-collapseOne"
+                        aria-controls="{{ element.slug }}"
                       >
-                        Accordion Item #1
+                        {{ element.title }}
                       </button>
                     </h2>
                     <div
-                      id="flush-collapseOne"
+                      id="{{ element.slug }}"
                       class="accordion-collapse collapse"
                       aria-labelledby="flush-headingOne"
                       data-bs-parent="#reminderFlushAccordion"
                     >
                       <div class="card card_reminder">
-                        <div class="card-header">Featured</div>
+                        <div class="card-header fw-light fst-italic">
+                          #{{ element.tag }}
+                        </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
+                          <h5 class="card-title">{{ element.title }}</h5>
+                          <p class="card-text">{{ element.reminder }}</p>
                           <a href="#" class="btn btn-warning">Mark as done</a>
                           <a href="#" class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
-                        <div class="card-footer text-muted">2 days ago</div>
+                        <div class="card-footer text-muted">
+                          Set for: {{ element.set_for }}
+                        </div>
                       </div>
                       <br />
                     </div>
                   </div>
                 </div>
+                <!-- endfor -->
+                {% endfor %}
+                <!-- endfor -->
+                <!-- endif -->
+                {% endif %}
+                <!-- endif -->
               </div>
             </div>
             <!-- family filter content -->
@@ -410,12 +660,29 @@
                   <li class="breadcrumb-item active" aria-current="page">
                     App
                   </li>
+                  <!-- if -->
+                  {% if current_user %}
+                  <!-- if -->
+                  <li class="breadcrumb-item">
+                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                      >logged in as: {{current_user}}</span
+                    >
+                  </li>
+                  <!-- endif -->
+                  {% endif %}
+                  <!-- endif -->
                 </ol>
               </nav>
 
               <!-- family filter content -->
               <div class="priority-filter-content">
-                <h3>Family Reminders</h3>
+                <h3><span class="fst-italic">#Family</span> Reminders</h3>
+                <!-- if -->
+                {% if family %}
+                <!-- if -->
+                <!-- for -->
+                {% for element in family %}
+                <!-- for -->
                 <div
                   class="accordion accordion-flush reminder-card"
                   id="reminderFlushAccordion"
@@ -426,38 +693,45 @@
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
+                        data-bs-target="#{{ element.slug }}"
                         aria-expanded="false"
-                        aria-controls="flush-collapseOne"
+                        aria-controls="{{ element.slug }}"
                       >
-                        Accordion Item #1
+                        {{ element.title }}
                       </button>
                     </h2>
                     <div
-                      id="flush-collapseOne"
+                      id="{{ element.slug }}"
                       class="accordion-collapse collapse"
                       aria-labelledby="flush-headingOne"
                       data-bs-parent="#reminderFlushAccordion"
                     >
                       <div class="card card_reminder">
-                        <div class="card-header">Featured</div>
+                        <div class="card-header fw-light fst-italic">
+                          #{{ element.tag }}
+                        </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
+                          <h5 class="card-title">{{ element.title }}</h5>
+                          <p class="card-text">{{ element.reminder }}</p>
                           <a href="#" class="btn btn-warning">Mark as done</a>
                           <a href="#" class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
-                        <div class="card-footer text-muted">2 days ago</div>
+                        <div class="card-footer text-muted">
+                          Set for: {{ element.set_for }}
+                        </div>
                       </div>
                       <br />
                     </div>
                   </div>
                 </div>
+                <!-- endfor -->
+                {% endfor %}
+                <!-- endfor -->
+                <!-- endif -->
+                {% endif %}
+                <!-- endif -->
               </div>
             </div>
             <!-- leisure filter content -->
@@ -476,12 +750,29 @@
                   <li class="breadcrumb-item active" aria-current="page">
                     App
                   </li>
+                  <!-- if -->
+                  {% if current_user %}
+                  <!-- if -->
+                  <li class="breadcrumb-item">
+                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                      >logged in as: {{current_user}}</span
+                    >
+                  </li>
+                  <!-- endif -->
+                  {% endif %}
+                  <!-- endif -->
                 </ol>
               </nav>
 
               <!-- leisure filter content -->
               <div class="priority-filter-content">
-                <h3>Leisure Reminders</h3>
+                <h3><span class="fst-italic">#Leisure</span> Reminders</h3>
+                <!-- if -->
+                {% if leisure %}
+                <!-- if -->
+                <!-- for -->
+                {% for element in leisure %}
+                <!-- for -->
                 <div
                   class="accordion accordion-flush reminder-card"
                   id="reminderFlushAccordion"
@@ -492,38 +783,135 @@
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
+                        data-bs-target="#{{ element.slug }}"
                         aria-expanded="false"
-                        aria-controls="flush-collapseOne"
+                        aria-controls="{{ element.slug }}"
                       >
-                        Accordion Item #1
+                        {{ element.title }}
                       </button>
                     </h2>
                     <div
-                      id="flush-collapseOne"
+                      id="{{ element.slug }}"
                       class="accordion-collapse collapse"
                       aria-labelledby="flush-headingOne"
                       data-bs-parent="#reminderFlushAccordion"
                     >
                       <div class="card card_reminder">
-                        <div class="card-header">Featured</div>
+                        <div class="card-header fw-light fst-italic">
+                          #{{ element.tag }}
+                        </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
+                          <h5 class="card-title">{{ element.title }}</h5>
+                          <p class="card-text">{{ element.reminder }}</p>
                           <a href="#" class="btn btn-warning">Mark as done</a>
                           <a href="#" class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
-                        <div class="card-footer text-muted">2 days ago</div>
+                        <div class="card-footer text-muted">
+                          Set for: {{ element.set_for }}
+                        </div>
                       </div>
                       <br />
                     </div>
                   </div>
                 </div>
+                <!-- endfor -->
+                {% endfor %}
+                <!-- endfor -->
+                <!-- endif -->
+                {% endif %}
+                <!-- endif -->
+              </div>
+            </div>
+            <!-- complete filter content -->
+            <div
+              class="tab-pane fade"
+              id="list-complete"
+              role="tabpanel"
+              aria-labelledby="list-complete-list"
+            >
+              <!-- breadcrumb -->
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    App
+                  </li>
+                  <!-- if -->
+                  {% if current_user %}
+                  <!-- if -->
+                  <li class="breadcrumb-item">
+                    <span class="user-alert alert-success fw-light fst-italic" role="alert"
+                      >logged in as: {{current_user}}</span
+                    >
+                  </li>
+                  <!-- endif -->
+                  {% endif %}
+                  <!-- endif -->
+                </ol>
+              </nav>
+
+              <!-- complete filter content -->
+              <div class="priority-filter-content">
+                <h3>Complete Reminders</h3>
+                <!-- if -->
+                {% if complete %}
+                <!-- if -->
+                <!-- for -->
+                {% for element in complete %}
+                <!-- for -->
+                <div
+                  class="accordion accordion-flush reminder-card"
+                  id="reminderFlushAccordion"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#{{ element.slug }}"
+                        aria-expanded="false"
+                        aria-controls="{{ element.slug }}"
+                      >
+                        {{ element.title }}
+                      </button>
+                    </h2>
+                    <div
+                      id="{{ element.slug }}"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#reminderFlushAccordion"
+                    >
+                      <div class="card card_reminder">
+                        <div class="card-header fw-light fst-italic">
+                          #{{ element.tag }}
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">{{ element.title }}</h5>
+                          <p class="card-text">{{ element.reminder }}</p>
+                          <a href="#" class="btn btn-warning">Mark as done</a>
+                          <a href="#" class="btn btn-danger float-end"
+                            >Delete</a
+                          >
+                        </div>
+                        <div class="card-footer text-muted">
+                          Set for: {{ element.set_for }}
+                        </div>
+                      </div>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+                <!-- endfor -->
+                {% endfor %}
+                <!-- endfor -->
+                <!-- endif -->
+                {% endif %}
+                <!-- endif -->
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ body {
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
+  /* width: auto; */
 }
 
 .filter-group {
@@ -29,4 +30,10 @@ body {
 
 .card_reminder {
     margin: 20px;
+}
+
+.user-alert {
+  padding: 0 5px;
+  border-radius: 3px;
+  border: 1px solid black;
 }
