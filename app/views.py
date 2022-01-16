@@ -1,6 +1,7 @@
-from django.shortcuts import render
-from django.test import tag
-from .models import *
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, redirect
+from app.forms import ReminderForm
+from .models import ReminderModel
 import requests
 
 # Create your views here.
@@ -74,3 +75,27 @@ def app(request):
     }
 
     return render(request, 'app/index.html', context)
+
+def upload(request):
+
+    current_user = request.user
+
+    if request.method == 'POST':
+
+        form = ReminderForm(request.POST)
+
+        if form.is_valid():
+
+            form.save()
+            
+        return redirect('app')
+
+    else:
+        form = ReminderForm()
+
+    context = {
+        'form' : form,
+        'current_user' : current_user
+    }
+
+    return render(request, 'app/upload.html', context)

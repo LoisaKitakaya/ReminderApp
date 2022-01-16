@@ -37,3 +37,14 @@ body {
   border-radius: 3px;
   border: 1px solid black;
 }
+
+.upload-form {
+  margin: 20px;
+}
+
+.form-card {
+  margin-top: 20px;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
