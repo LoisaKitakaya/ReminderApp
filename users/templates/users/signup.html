@@ -49,9 +49,7 @@
           <li class="breadcrumb-item">
             <a href="{% url 'app' %}">App</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Signup
-          </li>
+          <li class="breadcrumb-item active" aria-current="page">Signup</li>
           <!-- if -->
           {% if current_user %}
           <!-- if -->
@@ -68,20 +66,17 @@
         </ol>
       </nav>
 
-      <!-- all filter content -->
-      <div class="all-filter-content">
-        <h3 class="text-center">Signup</h3>
-        <div class="form-card">
-          <form method="POST">
-            {% csrf_token %}
-            <!-- form -->
-            {% bootstrap_form form %}
-            <br />
-            <button type="submit" class="btn btn-success container-fluid">
-              Submit
-            </button>
-          </form>
-        </div>
+      <h3 class="text-center">Signup</h3>
+      <div class="form-card">
+        <form method="POST">
+          {% csrf_token %}
+          <!-- form -->
+          {% bootstrap_form form %}
+          <br />
+          <button type="submit" class="btn btn-success container-fluid">
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   </body>

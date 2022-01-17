@@ -39,3 +39,22 @@ body {
   margin: auto;
   padding: 20px;
 }
+
+.misc-content {
+  padding-top: 40px;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact-icons img {
+  height:64px;
+  width: 64px;
+}
+
+.contact-icons a {
+  text-decoration: none;
+}

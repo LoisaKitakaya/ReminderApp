@@ -14,9 +14,9 @@
       type="image/x-icon"
     />
     <!-- document title -->
-    <title>ReminderApp | Login</title>
+    <title>ReminderApp | Contacts</title>
     <!-- css file -->
-    <link rel="stylesheet" href="{% static 'users/css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}" />
     <!-- bootstrap css -->
     <link
       rel="stylesheet"
@@ -49,7 +49,7 @@
           <li class="breadcrumb-item">
             <a href="{% url 'app' %}">App</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Login</li>
+          <li class="breadcrumb-item active" aria-current="page">Contacts</li>
           <!-- if -->
           {% if current_user %}
           <!-- if -->
@@ -66,23 +66,44 @@
         </ol>
       </nav>
 
-      <h3 class="text-center">Login</h3>
-      <div class="form-card">
-        <form method="POST">
-          {% csrf_token %}
-          <!-- form -->
-          {% bootstrap_form form %}
-          <br />
-          <button type="submit" class="btn btn-success container-fluid">
-            Login
-          </button>
-          <br />
-          <br />
-          <p class="text-center">
-            Don't have an account? Signup
-            <a href="{% url 'signup' %}">here</a>
-          </p>
-        </form>
+      <div class="container misc-content filter-group">
+        <div class="row">
+          <div class="col-6">
+            <div class="card about-image" style="width: 18rem">
+              <img
+                src="{% static 'img/ReminderApp_Logo.png' %}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Reminder app by
+                  <a href="https://github.com/LoisaKitakaya">Freedom Loisa</a>
+                  <br />
+                  <span>copyright © 2022 Freedom Loisa</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 contact-icons text-end">
+            <a href="#">
+              <span>github</span>
+              <img src="{% static 'img/github.svg' %}" alt="" />
+            </a>
+            <a href="#">
+              <span>facebook</span>
+              <img src="{% static 'img/facebook.svg' %}" alt="" />
+            </a>
+            <a href="#">
+              <span>twitter</span>
+              <img src="{% static 'img/twitter.svg' %}" alt="" />
+            </a>
+            <a href="#">
+              <span>whatsapp</span>
+              <img src="{% static 'img/whatsapp.svg' %}" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -116,3 +116,11 @@ def delete(request, id):
     reminder_obj.delete()
 
     return redirect('app')
+
+def about(request):
+
+    return render(request, 'app/about.html')
+
+def contacts(request):
+
+    return render(request, 'app/contacts.html')
