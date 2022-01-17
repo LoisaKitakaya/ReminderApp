@@ -1,7 +1,7 @@
 # ReminderApp
 A Django CRUD app. Features include User Authentication, CRUD operations, Markdown Field support, Live deployment to Heroku.
 
-[Preview live](<https://procoderblog.herokuapp.com/> "Live View")
+[Preview live](<https://appreminderapp.herokuapp.com/> "Live View")
 
 ## Technologies
 - HTML
