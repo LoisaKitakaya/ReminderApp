@@ -361,8 +361,14 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ element.title }}</h5>
                           <p class="card-text">{{ element.reminder }}</p>
-                          <a href="#" class="btn btn-warning">Mark as done</a>
-                          <a href="#" class="btn btn-danger float-end"
+                          <a
+                            href="{% url 'done' element.id %}"
+                            class="btn btn-warning"
+                            >Mark as done</a
+                          >
+                          <a
+                            href="{% url 'delete' element.id %}"
+                            class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
@@ -453,8 +459,14 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ element.title }}</h5>
                           <p class="card-text">{{ element.reminder }}</p>
-                          <a href="#" class="btn btn-warning">Mark as done</a>
-                          <a href="#" class="btn btn-danger float-end"
+                          <a
+                            href="{% url 'done' element.id %}"
+                            class="btn btn-warning"
+                            >Mark as done</a
+                          >
+                          <a
+                            href="{% url 'delete' element.id %}"
+                            class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
@@ -545,8 +557,14 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ element.title }}</h5>
                           <p class="card-text">{{ element.reminder }}</p>
-                          <a href="#" class="btn btn-warning">Mark as done</a>
-                          <a href="#" class="btn btn-danger float-end"
+                          <a
+                            href="{% url 'done' element.id %}"
+                            class="btn btn-warning"
+                            >Mark as done</a
+                          >
+                          <a
+                            href="{% url 'delete' element.id %}"
+                            class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
@@ -637,8 +655,14 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ element.title }}</h5>
                           <p class="card-text">{{ element.reminder }}</p>
-                          <a href="#" class="btn btn-warning">Mark as done</a>
-                          <a href="#" class="btn btn-danger float-end"
+                          <a
+                            href="{% url 'done' element.id %}"
+                            class="btn btn-warning"
+                            >Mark as done</a
+                          >
+                          <a
+                            href="{% url 'delete' element.id %}"
+                            class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
@@ -729,8 +753,14 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ element.title }}</h5>
                           <p class="card-text">{{ element.reminder }}</p>
-                          <a href="#" class="btn btn-warning">Mark as done</a>
-                          <a href="#" class="btn btn-danger float-end"
+                          <a
+                            href="{% url 'done' element.id %}"
+                            class="btn btn-warning"
+                            >Mark as done</a
+                          >
+                          <a
+                            href="{% url 'delete' element.id %}"
+                            class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
@@ -821,8 +851,14 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ element.title }}</h5>
                           <p class="card-text">{{ element.reminder }}</p>
-                          <a href="#" class="btn btn-warning">Mark as done</a>
-                          <a href="#" class="btn btn-danger float-end"
+                          <a
+                            href="{% url 'done' element.id %}"
+                            class="btn btn-warning"
+                            >Mark as done</a
+                          >
+                          <a
+                            href="{% url 'delete' element.id %}"
+                            class="btn btn-danger float-end"
                             >Delete</a
                           >
                         </div>
@@ -913,9 +949,7 @@
                         <div class="card-body">
                           <h5 class="card-title">{{ element.title }}</h5>
                           <p class="card-text">{{ element.reminder }}</p>
-                          <a href="#" class="btn btn-danger"
-                            >Delete</a
-                          >
+                          <a href="{% url 'delete' element.id %}" class="btn btn-danger">Delete</a>
                         </div>
                         <div class="card-footer text-muted">
                           Set for: {{ element.set_for }}

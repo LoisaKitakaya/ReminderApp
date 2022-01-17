@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
+from django.template import context
 from app.forms import ReminderForm
 from .models import ReminderModel
 import requests
@@ -101,3 +102,17 @@ def upload(request):
     }
 
     return render(request, 'app/upload.html', context)
+
+def done(request, id):
+
+    reminder_obj = ReminderModel.objects.filter(id=id).update(status=1)
+
+    return redirect('app')
+
+def delete(request, id):
+
+    reminder_obj = ReminderModel.objects.filter(id=id)
+
+    reminder_obj.delete()
+
+    return redirect('app')
