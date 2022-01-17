@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'reminder.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'reminderappdb',
-        'USER': 'postgres',
-        'PASSWORD': '#Kitloisa15',
-        'HOST': 'localhost',
+        'NAME': 'd35gt1ucnsp2j4',
+        'USER': 'jfzhfkifnueijy',
+        'PASSWORD': '932d11a0379ccd7013310b8f05b893bab2977337749dd4f9867bb7d8f6896b03',
+        'HOST': 'ec2-54-146-82-179.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
@@ -133,9 +133,9 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
-STATIC_ROOT = 'static_root'
+# STATIC_ROOT = 'static_root'
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 
 # media files (Images, Documents)
 MEDIA_URL = '/media/'
