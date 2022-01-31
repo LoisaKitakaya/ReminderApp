@@ -4,6 +4,7 @@ from django.template import context
 from app.forms import ReminderForm
 from .models import ReminderModel
 import requests
+import os
 
 # Create your views here.
 def home(request):
@@ -12,7 +13,7 @@ def home(request):
 
     headers = {
         'x-rapidapi-host': "quotes15.p.rapidapi.com",
-        'x-rapidapi-key': "53261179d3msh4f625af6c821a4cp17aaa5jsn475301ddb7c1"
+        'x-rapidapi-key': os.getenv('x-rapidapi-key')
         }
 
     response = requests.request("GET", url, headers=headers)
@@ -89,7 +90,9 @@ def upload(request):
 
         if form.is_valid():
 
-            form.save()
+            save_instance = form.save(commit=False)
+            save_instance.user = current_user
+            save_instance.save()
             
         return redirect('app')
 

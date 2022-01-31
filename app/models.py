@@ -23,7 +23,7 @@ class ReminderModel(models.Model):
     reminder = models.TextField()
     set_for = models.DateTimeField(auto_now_add=False)
     tag = models.CharField(max_length=50, choices=TAGS)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
     updated_on = models.DateTimeField(auto_now= True)
 
